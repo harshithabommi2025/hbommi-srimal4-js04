@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        JavaScript 7th Edition
+        Chapter 4
+        Hands-on Project 4-3
+
+        Author: 
+        Date:   
+
+        Filename: project04-03.html
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-on Project 4-3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        // Wait for the page to load before adding the event listener
+        window.addEventListener("load", function () {
+            const commentBox = document.getElementById("comment");
+            const countValue = document.getElementById("countValue");
+            const warningBox = document.getElementById("warningBox");
+            const limit = 1000;  // Character limit
+
+            // Update the character count whenever the user types
+            commentBox.addEventListener("input", function () {
+                let currentCount = commentBox.value.length;
+                countValue.textContent = currentCount;
+
+                // Show warning if the user exceeds the character limit
+                if (currentCount > limit) {
+                    warningBox.textContent = "You have exceeded the character limit!";
+                    warningBox.style.color = "red";
+                } else {
+                    warningBox.textContent = "";
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Hands-on Project 4-3</h1>
+    </header>
+
+    <article>
+        <h2>Book Review Comment</h2>
+        
+        <!-- Textarea for user input -->
+        <textarea id="comment" rows="10" cols="50"></textarea>
+        
+        <div id="countLabel">
+            Character Count: <span id="countValue">0</span> / <span id="limit">1000</span>
+        </div>
+        
+        <!-- Warning box for exceeding the character limit -->
+        <div id="warningBox"></div>
+        
+    </article>
+</body>
+
+</html>
+

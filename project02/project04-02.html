@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        JavaScript 7th Edition
+        Chapter 4
+        Hands-on Project 4-2
+
+        Author: 
+        Date:   
+
+        Filename: project04-02.html
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands-on Project 4-2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        // Array of random Jane Austen quotes
+        const quotes = [
+            "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
+            "There is no charm equal to tenderness of heart.",
+            "I am not a great reader of novels, but I do like to read about love.",
+            "You must allow me to tell you how ardently I admire and love you.",
+            "I could not be more serious if I were to speak about the subject of our conversation.",
+            "I am not a great reader of novels, but I do like to read about love."
+        ];
+
+        // Function to get a random quote
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        // When the page is loaded, display a random quote
+        window.onload = function() {
+            const quoteElement = document.querySelector('blockquote');
+            quoteElement.textContent = getRandomQuote();
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Hands-on Project 4-2</h1>
+    </header>
+
+    <article>
+        <h2>Random Quotes from Jane Austen</h2>
+        <blockquote></blockquote>
+    </article>
+</body>
+
+</html>
+
