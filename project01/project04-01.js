@@ -3,8 +3,8 @@
       Project 04-01
 
       Application to calculate total moving cost
-      Author: 
-      Date:   
+      Author: Harshitha Bommi
+      Date:  02/14/2025 
 
       Filename: project04-01.js
 */
