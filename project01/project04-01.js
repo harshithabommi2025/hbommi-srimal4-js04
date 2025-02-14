@@ -36,7 +36,7 @@ function calcTotal() {
 
         // Check if the values are greater than 0
         if (weight <= 0 || distance <= 0) {
-            throw new Error("Please enter a valid number greater than 0 for both weight and distance.");
+            throw new Error("!!Enter a positive weight");
         }
 
         // Add the cost for weight, distance, and setup fee (if selected)
@@ -54,7 +54,6 @@ function calcTotal() {
         msgBox.innerHTML = error.message;
         // Clear the total box since we had an error
         document.getElementById("totalBox").innerHTML = "$0.00";
-        alert("Please enter a valid number greater than 0 for both weight and distance.");
     }
 }
 
