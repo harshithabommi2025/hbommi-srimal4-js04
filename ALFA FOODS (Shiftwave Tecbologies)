@@ -1,0 +1,99 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPtAbmoKx3OjikjIsSyyeI5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/harshithabommi2025/hbommi-srimal4-js04/blob/main/ALFA%20FOODS%20(Shiftwave%20Tecbologies)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "id": "foxS_gyHu3Yy",
+        "outputId": "a5924ffc-cabb-4c2c-a119-6c69d7a8efe4"
+      },
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "invalid decimal literal (<ipython-input-4-207963067>, line 8)",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-4-207963067>\"\u001b[0;36m, line \u001b[0;32m8\u001b[0m\n\u001b[0;31m    body { font-family: Arial, sans-serif; margin: 20px; }\u001b[0m\n\u001b[0m                                                    ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid decimal literal\n"
+          ]
+        }
+      ],
+      "source": [
+        "# prompt: website which resembles amazon shopping website\n",
+        "\n",
+        "<!DOCTYPE html>\n",
+        "<html>\n",
+        "<head>\n",
+        "<title>Simple Product Listing</title>\n",
+        "<style>\n",
+        "  body { font-family: Arial, sans-serif; margin: 20px; }\n",
+        "  .product-container { display: flex; flex-wrap: wrap; gap: 20px; }\n",
+        "  .product-card { border: 1px solid #ddd; padding: 10px; width: 200px; text-align: center; }\n",
+        "  .product-card img { max-width: 100%; height: auto; }\n",
+        "  .product-card h3 { margin: 10px 0; font-size: 1.1em; }\n",
+        "  .product-card p { color: #555; font-size: 0.9em; }\n",
+        "  .product-card .price { font-weight: bold; color: #B12704; margin-top: 5px; }\n",
+        "</style>\n",
+        "</head>\n",
+        "<body>\n",
+        "\n",
+        "  <h1>Product Showcase</h1>\n",
+        "\n",
+        "  <div class=\"product-container\">\n",
+        "    <div class=\"product-card\">\n",
+        "      <img src=\"https://via.placeholder.com/150\" alt=\"Product Image\">\n",
+        "      <h3>Product Title 1</h3>\n",
+        "      <p>Short description of the product.</p>\n",
+        "      <div class=\"price\">$19.99</div>\n",
+        "    </div>\n",
+        "\n",
+        "    <div class=\"product-card\">\n",
+        "      <img src=\"https://via.placeholder.com/150\" alt=\"Product Image\">\n",
+        "      <h3>Product Title 2</h3>\n",
+        "      <p>Another product description goes here.</p>\n",
+        "      <div class=\"price\">$29.50</div>\n",
+        "    </div>\n",
+        "\n",
+        "    <div class=\"product-card\">\n",
+        "      <img src=\"https://via.placeholder.com/150\" alt=\"Product Image\">\n",
+        "      <h3>Product Title 3</h3>\n",
+        "      <p>Details about the third product.</p>\n",
+        "      <div class=\"price\">$15.00</div>\n",
+        "    </div>\n",
+        "  </div>\n",
+        "\n",
+        "</body>\n",
+        "</html>\n"
+      ]
+    }
+  ]
+}
